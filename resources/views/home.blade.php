@@ -19,7 +19,7 @@
                 </div>
                 <div class="row justify-content-start">
                     <div class="col-auto">
-                        <h6>Из валюты:</h6>
+                        <h6>From currency:</h6>
                         <select class="form-select" aria-label="Default select example" name="from" id="from">
                             @foreach ($data['currenciesList'] as $key => $value)
                                 <option @php if($key == $data['from']) {echo 'selected';} else {echo '';} @endphp>
@@ -29,7 +29,7 @@
                         </select>
                     </div>
                     <div class="col-auto">
-                        <h6>В валюту:</h6>
+                        <h6>To currency:</h6>
                         <select class="form-select" aria-label="Default select example" name="to" id="to">
                             @foreach ($data['currenciesList'] as $key => $value)
                                 <option @php if($key == $data['to']) {echo 'selected';} else {echo '';} @endphp>
